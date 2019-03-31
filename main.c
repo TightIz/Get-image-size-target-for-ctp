@@ -36,9 +36,7 @@ int main(int argc, char ** argv) {
             printf("%i\n", ((length / targetTitleSize) + 1 ) * targetTitleSize); // print new target length
         }
         return 0;
-    }
-    // get the next smaller supported width and length
-    if (argv[1][1] == 'r') {
+    } else {  // get the next smaller supported width and length
         if (width % targetTitleSize == 0) {
             printf("-1\n"); // width is fine
         } else {
