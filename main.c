@@ -10,7 +10,7 @@
 
 int main(int argc, char ** argv) {
     // not enough arguments
-    if (argc < 4) {
+    if (argc < 5) {
         fprintf(stderr, "[Error] Not enough Arguments\n");
         return 1;
     }
