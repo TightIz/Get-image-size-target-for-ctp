@@ -25,17 +25,13 @@ int main(int argc, char ** argv) {
     int length          = atoi(argv[4]);
     // get the next bigger supported width and length
     if (argv[1][1] == 'e') {
-        if (width % targetTitleSize == 0 && width % targetTitleSize == 0) {
-            printf("-1\n"); // both are fine
-            return 0;
-        }
         if (width % targetTitleSize == 0) {
-            printf("-2\n"); // width is fine
+            printf("-1\n"); // width is fine
         } else {
             printf("%i\n", ((width / targetTitleSize) + 1 ) * targetTitleSize); // print new target width
         }
         if (length % targetTitleSize == 0) {
-            printf("-3\n"); // length is fine
+            printf("-1\n"); // length is fine
         } else {
             printf("%i\n", ((length / targetTitleSize) + 1 ) * targetTitleSize); // print new target length
         }
@@ -43,17 +39,13 @@ int main(int argc, char ** argv) {
     }
     // get the next smaller supported width and length
     if (argv[1][1] == 'r') {
-        if (width % targetTitleSize == 0 && width % targetTitleSize == 0) {
-            printf("-1\n"); // both are fine
-            return 0;
-        }
         if (width % targetTitleSize == 0) {
-            printf("-2\n"); // width is fine
+            printf("-1\n"); // width is fine
         } else {
             printf("%i\n", (width / targetTitleSize) * targetTitleSize); // print new target width
         }
         if (length % targetTitleSize == 0) {
-            printf("-3\n"); // length is fine
+            printf("-1\n"); // length is fine
         } else {
             printf("%i\n", (length / targetTitleSize) * targetTitleSize); // print new target length
         }
