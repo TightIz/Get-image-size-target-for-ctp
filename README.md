@@ -6,7 +6,7 @@ Get the next bigger or smaller width and length of a image, for using ctp by Deo
 -r (get the next smaller supported width and length)
 
 # Input
-<binaryName> <Argument (see above)> <title size> <width> <length>
+binaryName Argument(see above) title_size origWidth origLength
 
 # Output
 width (the new target width)
